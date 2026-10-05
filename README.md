@@ -74,6 +74,88 @@ on-premise and air-gapped environment.
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="45" alt="Linux"/>
 </p>
 
+## Setup Instructions
+
+### Prerequisites
+
+For the current SAT-SA prototype, you only need:
+
+- A modern web browser
+- Git (only if cloning the repository)
+- Python 3.x (optional, only if using a local HTTP server)
+
+Recommended browsers:
+
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+
+The current prototype does not require a backend server, database, Node.js, or any Python package installation.
+
+### 1. Clone the Repository
+
+    git clone https://github.com/Soheb04-git/SAT-SA.git
+    cd SAT-SA
+
+### 2. Open the Prototype Directly
+
+Navigate to:
+
+    prototype/index.html
+
+Open `index.html` in a modern web browser.
+
+### 3. Run Using a Local HTTP Server (Recommended)
+
+For a more consistent browser environment, run the prototype through a local HTTP server.
+
+Using Python:
+
+    python -m http.server 8000
+
+Then open:
+
+    http://localhost:8000/prototype/
+
+### 4. Start the Demonstration
+
+After opening the SAT-SA prototype:
+
+1. Open the SAT-SA dashboard.
+2. Load the Synthetic Demo Dataset.
+3. Run the analysis workflow.
+4. Review the detected supervisory findings.
+5. Open the Evidence Explorer.
+6. Inspect the supporting evidence.
+7. Open the Review Queue.
+8. Select a priority review item.
+9. Drill down into the associated evidence and rationale.
+10. Review the methodology section to understand the analytical workflow.
+
+### 5. Recommended Demo Flow
+
+    Overview
+       ↓
+    Synthetic Demo Dataset
+       ↓
+    Analysis Workflow
+       ↓
+    Entities
+       ↓
+    Findings
+       ↓
+    Evidence Explorer
+       ↓
+    Review Queue
+       ↓
+    Human Supervisory Review
+
+### Note
+
+The current prototype demonstrates the SAT-SA workflow using synthetic SOC evidence. It is a browser-based demonstration and does not represent the complete production deployment.
+
+The proposed production architecture is designed for NCIIPC-controlled, local and fully air-gapped deployment with secure data processing, persistent storage, access control, audit logging, and scalable multi-CSE analytics.
+
 ### Architecture Flow
 
 ```text
